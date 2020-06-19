@@ -1,43 +1,53 @@
-*{font-family: 'Nanum Gothic', sans-serif; margin: 0; padding: 0;}
+*{font-family: 'Nanum Gothic', sans-serif; margin: 0; padding: 0; box-sizing: border-box; border:none;}
+.clear{clear: both;}
 
-header {position: relative; width: 100%; height: 84px; background-color: rgb(20, 12, 56); padding: 37px 0;}
-header > h1 {float: left; margin-left: 50px;}
-header > div.menu-wrap {float: right; margin-right: 50px; position:relative; padding-top: 26px;}
-header > div.menu-wrap > a {text-decoration: none; color:#fff; font-size: 16px; font-weight: 700;}
+header {position: relative; width: 100%; height: 130px; background-color: rgb(20, 12, 56); padding: 30px 0 ;}
+header > h1 {float: left; margin-left: 90px; padding-top: 7px;}
+header > div.menu-wrap {float: right; margin-right: 90px; position:relative; padding-top: 26px;}
+header > div.menu-wrap > a {text-decoration: none; color:#fff; font-size: 15pt; font-weight: 700;}
 header > div.menu-wrap > a:first-child {color:#fbe04c}
-header > div.menu-wrap > a:nth-child(2),a:nth-child(3),a:last-child {padding-left: 20px;}
+header > div.menu-wrap > a:nth-child(2),
+header > div.menu-wrap > a:nth-child(3),
+header > div.menu-wrap > a:last-child {padding-left: 20px;}
 
+header > nav {position: fixed; top: 40%; left: 7%;}
+header > nav > div.nav > ul {list-style: none;}
+header > nav > div.nav > ul > li {margin-bottom: 17px;}
+header > nav > div.nav > ul > li > a {text-decoration: none; color: white; text-shadow: #666 0 5px 10px; opacity: 60%;}
+header > nav > div.nav > ul > li > a:hover {color:rgb(20, 12, 56);}
+header > nav > div.nav > ul > li > a.selected {opacity: 100%;}
 
 article.main-visual {
-      width: 100%; height: 1110px; padding:0 310px; text-align:justify; 
+      height: 760px; padding:0 20%; text-align:justify; 
       background-image: url("image/maid-visual.jpg"); background-size: cover;
 }
-article.main-visual > div.txt-btn {padding: 290px 0 0 0;}
-article.main-visual > div.txt-btn > h2 {font-weight: 800; font-size: 72pt; letter-spacing: 10px; color:#fbe04c;}
-article.main-visual > div.txt-btn > h2 > span {font-weight: 400; font-size: 30pt; letter-spacing: 2px; padding-left: 20px; vertical-align: bottom;}
+article.main-visual > div.txt-btn {padding: 230px 0 0 0;}
+article.main-visual > div.txt-btn > h2 {font-weight: 800; font-size: 60pt; letter-spacing: 10px; color:#fbe04c;}
+article.main-visual > div.txt-btn > h2 > span {font-weight: 400; font-size: 25pt; letter-spacing: 2px; padding-left: 20px; vertical-align: bottom;}
 article.main-visual > div.txt-btn > div.main-txt {color: #fff; margin-top: 28px;}
-article.main-visual > div.txt-btn > div.main-txt > p {font-size: 24pt; padding-top: 26px;}
-article.main-visual > div.txt-btn > div.btn {margin-top: 155px;}
-article.main-visual > div.txt-btn > div.btn > a {
-      float: left; width: 310px; height: 110px;
-      background-color: #fff; border-radius: 54.5px;
-      font-size: 18pt; font-weight: 700; color: #2b1c58;
-      box-shadow: inset 2px 0px 7px 0px #333;
+article.main-visual > div.txt-btn > div.main-txt > p {font-size: 20pt; padding-top: 26px;}
+article.main-visual > div.txt-btn > div.btn {margin-top: 70px;}
+article.main-visual > div.txt-btn > div.btn > button {
+      outline: none;
+      cursor: pointer;
+      margin-right: 20px; padding: 0 30px;
+      float: left; width: 260px; height: 90px;
+      background-color: #fff; border-radius: 45.41px;
+      font-size: 15pt; font-weight: 400; color: #2b1c58;
+      box-shadow: #666 0 5px 10px;
 }
-article.main-visual > div.txt-btn > div.btn > a.google {margin-right: 20px;}
-article.main-visual > div.txt-btn > div.btn > a.google > img {margin: 24px 20px 0 50px; float: left;}
-article.main-visual > div.txt-btn > div.btn > a.google > p {margin-top: 40px;}
+article.main-visual > div.txt-btn > div.btn > button > p {float: left; padding-top: 15px;}
 
-article.main-visual > div.txt-btn > div.btn > a.app-store {}
-article.main-visual > div.txt-btn > div.btn > a.app-store > img {margin: 24px 20px 0 50px; float: left;}
-article.main-visual > div.txt-btn > div.btn > a.app-store > p {margin-top: 40px;}
+.google {margin-right: 20px;}
+.google > img {margin-right: 20px;vertical-align: middle; float: left;}
+.app-store > img {margin-right: 20px; vertical-align: middle; float: left;}
 
-article.main-visual > div.main-phone {position: relative; margin-left: 130px; display: inline-block;}
+article.main-visual > div.main-phone {position: relative; margin-left: 90px; display: inline-block;}
 article.main-visual > div.main-phone > img {float: left; position: absolute; top: -440px;}
 
 article.about {width: 100%; text-align:justify; }
 article.about > div.about-txt {
-      height: 1240px; padding: 150px 0 0 310px;
+      height: 950px; padding: 140px 0 0 20%;
       background: linear-gradient(130deg, #252496, #9c4dd4 ,#00faff);
 }
 article.about > div.about-txt > div.menu-name {position: relative;  font-size: 21pt; margin-bottom: 220px;}
@@ -67,3 +77,8 @@ article.about > div.about-txt > div.text-left > div.circle > div.circle1 > p, di
 article.about > div.about-txt > div.text-right {float: left;}
 article.about > div.about-txt > div.text-right > h4 {font-size: 21pt; font-weight: 700; color: #fff; margin-bottom: 48px;}
 article.about > div.about-txt > div.text-right > p {font-size: 17pt; font-weight: 400; color: #fff; line-height: 44pt;}
+
+
+/* ARTICLE.BTN-ATEA */
+section > article.btn-area {}
+section > article.btn-area > a {}
