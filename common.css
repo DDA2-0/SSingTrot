@@ -1,6 +1,8 @@
 *{font-family: 'Nanum Gothic', sans-serif; margin: 0; padding: 0; box-sizing: border-box; border:none;}
 .clear{clear: both;}
 
+html{scroll-behavior:smooth;}
+
 header {position: relative; width: 100%; height: 130px; background-color: rgb(20, 12, 56); padding: 30px 0 ;}
 header > h1 {float: left; margin-left: 90px; padding-top: 7px;}
 header > div.menu-wrap {float: right; margin-right: 90px; position:relative; padding-top: 26px;}
@@ -20,8 +22,9 @@ header > nav > div.nav > ul > li > a.selected {opacity: 100%;}
 article.main-visual {
       height: 760px; padding:0 20%; text-align:justify; 
       background-image: url("image/maid-visual.jpg"); background-size: cover;
+      display: block;
 }
-article.main-visual > div.txt-btn {padding: 230px 0 0 0;}
+article.main-visual > div.txt-btn {padding: 230px 0 0 0; position: relative;}
 article.main-visual > div.txt-btn > h2 {font-weight: 800; font-size: 60pt; letter-spacing: 10px; color:#fbe04c;}
 article.main-visual > div.txt-btn > h2 > span {font-weight: 400; font-size: 25pt; letter-spacing: 2px; padding-left: 20px; vertical-align: bottom;}
 article.main-visual > div.txt-btn > div.main-txt {color: #fff; margin-top: 28px;}
@@ -42,43 +45,87 @@ article.main-visual > div.txt-btn > div.btn > button > p {float: left; padding-t
 .google > img {margin-right: 20px;vertical-align: middle; float: left;}
 .app-store > img {margin-right: 20px; vertical-align: middle; float: left;}
 
-article.main-visual > div.main-phone {position: relative; margin-left: 90px; display: inline-block;}
+article.main-visual > div.main-phone {position: absolute; margin-left: 90px; display: inline-block;}
 article.main-visual > div.main-phone > img {float: left; position: absolute; top: -440px;}
 
 article.about {width: 100%; text-align:justify; }
 article.about > div.about-txt {
-      height: 950px; padding: 140px 0 0 20%;
+      height: 950px; padding: 135px 0 0 20%;
       background: linear-gradient(130deg, #252496, #9c4dd4 ,#00faff);
 }
-article.about > div.about-txt > div.menu-name {position: relative;  font-size: 21pt; margin-bottom: 220px;}
+article.about > div.about-txt > div.menu-name {position: relative;  font-size: 21pt; margin-bottom: 110px;}
 article.about > div.about-txt > div.menu-name > a {
       border-radius: 100; color: rgba(255, 255, 255, 0.7); float: left; margin-right: 10px;
       text-decoration: none;
 }
 article.about > div.about-txt > div.menu-name > p {color:#fff;}
 
-article.about > div.about-txt > h3 {font-size: 55pt; color:#fbe04c; font-weight: 800;}
-
-article.about > div.about-txt > div.text-left {margin-top: 95px; }
-article.about > div.about-txt > div.text-left > h4 {font-size: 21pt; font-weight: 700; color: #fff; margin-bottom: 48px;}
-article.about > div.about-txt > div.text-left > p {font-size: 17pt; font-weight: 400; color: #fff; margin-bottom: 83px;}
-article.about > div.about-txt > div.text-left > div.circle {position: relative;}
-article.about > div.about-txt > div.text-left > div.circle > div.circle1, div.circle2, div.circle3 {
+article.about > div.about-txt > ul.textbox-left {float:left; display: block;}
+article.about > div.about-txt > ul.textbox-left > li {list-style-type: none;}
+article.about > div.about-txt > ul.textbox-left > li > h3 {margin-bottom: 95px; font-size: 44pt; color:#fbe04c; font-weight: 800;}
+article.about > div.about-txt > ul.textbox-left > li > h4 {font-size: 16pt; font-weight: 700; color: #fff; margin-bottom: 35px;}
+article.about > div.about-txt > ul.textbox-left > li > p {font-size: 13pt; font-weight: 700; color: #fff; margin-bottom: 76px;}
+article.about > div.about-txt > ul.textbox-left > li > div.circle {position: relative;}
+article.about > div.about-txt > ul.textbox-left > li > div.circle > div {
       float: left; position: absolute; background-color: transparent;
-      width: 200px; height:200px; border: solid #fff 1px ; border-radius: 100px;
+      width: 135px; height:135px; border: 2px solid #fbe04c  ; border-radius: 100px;
 }
-article.about > div.about-txt > div.text-left > div.circle > div.circle2 {margin-left: 170px;}
-article.about > div.about-txt > div.text-left > div.circle > div.circle3 {margin-left: 340px;}
+article.about > div.about-txt > ul.textbox-left > li > div.circle > div.circle2 {margin-left: 115px;}
+article.about > div.about-txt > ul.textbox-left > li > div.circle > div.circle3 {margin-left: 230px;}
 
-article.about > div.about-txt > div.text-left > div.circle > div.circle1 > p, div.circle2 > p, div.circle3 > p {
-      width: 200px; height: 200px; text-align: center; color:#fff; font-size: 25pt; display:table-cell; vertical-align: middle;
+article.about > div.about-txt > ul.textbox-left > li > div.circle > div > p {
+      width: 135px; height: 135px; text-align: center; color:#fbe04c; font-size: 16pt; font-weight: 700; display:table-cell; vertical-align: middle;
 }
 
-article.about > div.about-txt > div.text-right {float: left;}
-article.about > div.about-txt > div.text-right > h4 {font-size: 21pt; font-weight: 700; color: #fff; margin-bottom: 48px;}
-article.about > div.about-txt > div.text-right > p {font-size: 17pt; font-weight: 400; color: #fff; line-height: 44pt;}
+article.about > div.about-txt > ul.textbox-right {position: relative; float:left; padding-top: 160px;}
+article.about > div.about-txt > ul.textbox-right > li {list-style-type: none;}
+article.about > div.about-txt > ul.textbox-right > li > h3 {font-size: 18pt; font-weight: 700; color: #fff; margin-bottom: 48px;}
+article.about > div.about-txt > ul.textbox-right > li > p {width: 530px; font-size: 13pt; font-weight: 400; color: #fff; line-height: 33pt;}
+article.about > div.about-txt > ul.textbox-right > li > p > span {color:#fbe04c;}
 
 
-/* ARTICLE.BTN-ATEA */
-section > article.btn-area {}
-section > article.btn-area > a {}
+
+/*@media (max-width:950px) {
+      header > h1 {float: left; margin-left: 30px; padding-top: 20px;}
+      header > h1 > img {width: 50%;}
+      header > div.menu-wrap {float: right; margin-right: 30px;}
+      header > div.menu-wrap > a {text-decoration: none; color:#fff; font-size: 10pt; font-weight: 700;}
+
+      article.main-visual {
+            height: 760px; padding:0 15%; text-align:justify; 
+            background-image: url("image/maid-visual.jpg"); background-size: cover;
+            display: block;
+      }
+      article.main-visual > div.txt-btn {padding: 30% 0 0 0; position: relative;}
+      article.main-visual > div.txt-btn > h2 {font-weight: 800; font-size: 45pt; letter-spacing: 10px; color:#fbe04c;}
+      article.main-visual > div.txt-btn > h2 > span {font-weight: 400; font-size: 18pt; letter-spacing: 2px; padding-left: 20px; vertical-align: bottom;}
+      article.main-visual > div.txt-btn > div.main-txt {color: #fff; margin-top: 28px;}
+      article.main-visual > div.txt-btn > div.main-txt > p {font-size: 15pt; padding-top: 26px;}
+      article.main-visual > div.txt-btn > div.btn {margin-top: 70px;}
+      article.main-visual > div.txt-btn > div.btn > button {width: 130px; height: 45px; padding: 0px 0px;}
+      article.main-visual > div.txt-btn > div.btn > button > p {font-size: 12px; margin: 0 0 0 50px; padding-top: 7px; position: absolute;}
+      article.main-visual > div.txt-btn > div.btn > button > img {width:20%; height:50%; margin-top: 5px; margin-left: 20px;}
+      }
+      article.about > div.about-txt > div.menu-name {position: relative;  font-size: 15pt; margin-bottom: 110px;}
+
+      article.about > div.about-txt > ul.textbox-left > li > h3 {margin-bottom: 95px; font-size: 30pt; color:#fbe04c; font-weight: 800;}
+      article.about > div.about-txt > ul.textbox-left > li > h4 {font-size: 13pt; font-weight: 700; color: #fff; margin-bottom: 35px;}
+      article.about > div.about-txt > ul.textbox-left > li > p {font-size: 10pt; font-weight: 700; color: #fff; margin-bottom: 76px;}
+      article.about > div.about-txt > ul.textbox-left > li > div.circle {position: relative;}
+      article.about > div.about-txt > ul.textbox-left > li > div.circle > div {
+            float: left; position: absolute; background-color: transparent;
+            width: 80px; height:80px; border: 2px solid #fbe04c  ; border-radius: 100%;
+      }
+      article.about > div.about-txt > ul.textbox-left > li > div.circle > div.circle2 {margin-left: 115px;}
+      article.about > div.about-txt > ul.textbox-left > li > div.circle > div.circle3 {margin-left: 230px;}
+
+      article.about > div.about-txt > ul.textbox-left > li > div.circle > div > p {
+            width: 80px; height: 80px; text-align: center; color:#fbe04c; font-size: 12t; font-weight: 700; display:table-cell; vertical-align: middle;
+      }
+
+      article.about > div.about-txt > ul.textbox-right {position: relative; float:left; padding-top: 160px;}
+      article.about > div.about-txt > ul.textbox-right > li {list-style-type: none;}
+      article.about > div.about-txt > ul.textbox-right > li > h3 {font-size: 18pt; font-weight: 700; color: #fff; margin-bottom: 48px;}
+      article.about > div.about-txt > ul.textbox-right > li > p {width: 530px; font-size: 13pt; font-weight: 400; color: #fff; line-height: 33pt;}
+      article.about > div.about-txt > ul.textbox-right > li > p > span {color:#fbe04c;}
+}
