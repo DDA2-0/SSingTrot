@@ -134,7 +134,21 @@ article.service > div.sevice-btn > div.btn4 > a.lesson > img{margin: 33px 0 0 30
 
 
 article.service-sub {background-color: #cdcced; height: 1050px; padding: 135px 0 0 20%;}
+.tab-container{position:relative; width:1045px; padding-top:24px}
+.tab-container > .tab-content{display:none; position:relative; height:710px;}
+.tab-container > .tab-content.selected{display:block}
+.tab-container > .tab-content > div.service-text {width:580px;}
+.tab-container > .tab-content > div.service-text > ul {list-style-type: none;}
+.tab-container > .tab-content > div.service-text > ul > li > h4 {font-size: 25pt;font-weight: 700;color: #484293; padding-bottom: 50px;}
+.tab-container > .tab-content > div.service-text > ul > li > p {font-size: 21pt; line-height: 40pt;color: #6562bc;}
+.blank{padding:75px 0 0 0;}
 
+.tab-menu{margin-top: 20px; float: right; margin-right: 20%;}
+.tab-menu ul{display:flex; list-style:none;}
+.tab-menu li{width:74px; height:74px; margin-left:15px;}
+.tab-menu li a{border-radius: 45px; position:relative;display:block;width:100%;height:100%;padding-top:13px;padding-bottom:13px;background-color:#eee;text-align:center;text-decoration:none;color:#242424;font-weight:700;line-height:2rem;-webkit-transition:background-color 120ms cubic-bezier(0.455,0.030,0.515,0.955),color 120ms cubic-bezier(0.455,0.030,0.515,0.955);-moz-transition:background-color 120ms cubic-bezier(0.455,0.030,0.515,0.955),color 120ms cubic-bezier(0.455,0.030,0.515,0.955);-o-transition:background-color 120ms cubic-bezier(0.455,0.030,0.515,0.955),color 120ms cubic-bezier(0.455,0.030,0.515,0.955);-ms-transition:background-color 120ms cubic-bezier(0.455,0.030,0.515,0.955),color 120ms cubic-bezier(0.455,0.030,0.515,0.955);transition:background-color 120ms cubic-bezier(0.455,0.030,0.515,0.955),color 120ms cubic-bezier(0.455,0.030,0.515,0.955)}
+.tab-menu li a.selected{background-color:#a088d3;color:#fff;cursor:default}
+.tab-menu + .tab-container{margin-top:20px}
 
 
 
@@ -147,11 +161,14 @@ article.service-sub {background-color: #cdcced; height: 1050px; padding: 135px 0
 #cursor-dot{z-index:600;width:4px;height:4px;border-radius:50%;background-color:rgb(162, 0, 255)}
 #cursor-bg{z-index:400;width:30px;height:30px;border:1px solid #fff;border-radius:50%;transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955),height 200ms cubic-bezier(0.455,0.030,0.515,0.955),background-color 200ms cubic-bezier(0.455,0.030,0.515,0.955),border-color 200ms cubic-bezier(0.455,0.030,0.515,0.955)}
 #progress{z-index:500;color:#fff;width:30px;height:30px;border-radius:50%;transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955)}
-#cursor-bg.active{width:60px;height:60px;background-color:#fff;border-color:#fff;mix-blend-mode:exclusion}
-#progress.active{width:60px;height:60px}
+#cursor-bg.active{width:50px;height:50px;background-color:#fff;border-color:#fff;mix-blend-mode:exclusion}
+#progress.active{width:50px;height:50px}
 #progress span{display:block;position:absolute;top:50%;left:50%;text-align:center;transform:translateX(-50%) translateY(-50%)}
 #progress.active span::after{content:'click!';text-transform:uppercase;font-size:0.833rem;line-height:1.333rem;opacity:0;transition:opacity 200ms cubic-bezier(0.455,0.030,0.515,0.955)}
 #progress.active span::after{opacity:1.0} 
+
+
+
 
 /*@media (max-width:950px) {
       header > h1 {float: left; margin-left: 30px; padding-top: 20px;}
