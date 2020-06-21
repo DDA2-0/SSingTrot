@@ -21,7 +21,7 @@ function onMouseMove(e){
 }
 
 function onMouseEnterList(e) {
-      console.log("enter");
+      // console.log("enter");
       if(!cursorBGEl.classList.contains("active")){
             cursorBGEl.classList.add("active");
       }
@@ -31,7 +31,7 @@ function onMouseEnterList(e) {
 }
 
 function onMouseLeaveList(e) {
-      console.log("leave");
+      // console.log("leave");
       if(cursorBGEl.classList.contains("active")){
             cursorBGEl.classList.remove("active");
       }
@@ -52,30 +52,30 @@ for(var i = 0; i < btnEl.length; i++){
 }
 
 
-var tabMenuEl = document.querySelector('#tab-menu'),
-    btnTabMenuEl = tabMenuEl.querySelectorAll('a'),
-    tabContainerEl = document.querySelector('.tab-container'),
-    tabContentEl = tabContainerEl.querySelectorAll('.tab-content'),
+var serviceMenuEl = document.querySelector('#service-menu'),
+    btnServiceMenuEl = serviceMenuEl.querySelectorAll('a'),
+    serviceContainerEl = document.querySelector('.service-container'),
+    serviceContentEl = serviceContainerEl.querySelectorAll('.service-content'),
     cuId = 0,
     exId = null;
 
-btnTabMenuEl = Array.prototype.slice.call(btnTabMenuEl);
+btnServiceMenuEl = Array.prototype.slice.call(btnServiceMenuEl);
 
-function onClickTabMenu(e) {
+function onClickServiceMenu(e) {
     e.preventDefault();
-    var el = e.currentTarget, index = btnTabMenuEl.indexOf(el);
+    var el = e.currentTarget, index = btnServiceMenuEl.indexOf(el);
     if(!el.classList.contains('selected')) {
         cuId = index;
-        btnTabMenuEl[exId].classList.remove('selected');
-        tabContentEl[exId].classList.remove('selected');
+        btnServiceMenuEl[exId].classList.remove('selected');
+        serviceContentEl[exId].classList.remove('selected');
         el.classList.add('selected');
-        tabContentEl[cuId].classList.add('selected');
+        serviceContentEl[cuId].classList.add('selected');
         exId = cuId;
     }
 }
 function addEvent() {
-    for(var i = 0; i < btnTabMenuEl.length; i++) {
-        btnTabMenuEl[i].addEventListener("click", onClickTabMenu);
+    for(var i = 0; i < btnServiceMenuEl.length; i++) {
+        btnServiceMenuEl[i].addEventListener("click", onClickServiceMenu);
     }
 }
 function init() {
@@ -84,3 +84,7 @@ function init() {
 }
 init();
 
+
+function open_page(url) {
+      newPage=window.open(url);
+  }
