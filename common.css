@@ -164,7 +164,7 @@ article.service-tv > div.tv-txt > ul > li > button > p {font-size: 20pt; color: 
 article.service-tv > div.tv-txt > ul > li > button > p > span {font-size: 15pt;}
 article.service-tv > div.tv-mockup {position: absolute; margin-left: 540px;}
 
-/*마우스커서 */
+/* 마우스커서 */
 #cursor-dot,#cursor-bg,#progress{overflow:hidden;position:fixed;top:50%;left:50%;
       transform:translateX(-50%) translateY(-50%);
       pointer-events:none;
