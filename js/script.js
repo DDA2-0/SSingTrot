@@ -85,6 +85,7 @@ function init() {
 init();
 
 
+
 function open_page(url) {
       newPage=window.open(url);
   }
