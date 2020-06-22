@@ -5,6 +5,7 @@ var cursorDotEl = document.querySelector("#cursor-dot"),
       btnListEls = listEl.querySelectorAll("a"),
       btnEl = listEl.querySelectorAll("button");
 
+      
 btnListEls = Array.prototype.slice.call(btnListEls); 
 btnEl = Array.prototype.slice.call(btnEl);
 
