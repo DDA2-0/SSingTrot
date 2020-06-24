@@ -83,8 +83,8 @@ article.about > div.about-txt > ul.textbox-right > li > h3 {font-size: 18pt; fon
 article.about > div.about-txt > ul.textbox-right > li > p {width: 530px; font-size: 13pt; font-weight: 400; color: #fff; line-height: 33pt;}
 article.about > div.about-txt > ul.textbox-right > li > p > span {color:#fbe04c;}
 
-article.video {width:100%; height: 1080px;}
-article.video > video {height: 1080px;}
+article.about > div.video {width:100%; background-color: #a69ed5; display: flex;}
+article.about > div.video > iframe {vertical-align: bottom; justify-content:center; flex:1;}
 
 article.service {
       height: 1110px; padding: 135px 0 0 20%;
@@ -164,7 +164,7 @@ article.service-tv > div.tv-txt > ul > li > button > p {font-size: 20pt; color: 
 article.service-tv > div.tv-txt > ul > li > button > p > span {font-size: 15pt;}
 article.service-tv > div.tv-mockup {position: absolute; margin-left: 540px;}
 
-article.review {background-color: #cdcced; height: 995px;padding: 105px 0 0 20%;}
+article.review {background-color: #cdcced; height: 995px; padding: 105px 0 0 20%;}
 .menu-name3 {position: relative; font-size: 17pt; margin-bottom: 50px; font-weight: 700;}
 .menu-name3 > a {
       color: rgba(93, 86, 189, 0.7); float: left; margin-right: 10px;
@@ -184,7 +184,7 @@ article.review > div.review-content > ul > li > div > img {border-radius: 77px; 
 article.review > div.review-content > ul > li > div > ul {list-style-type: none; display: table-cell; vertical-align: middle;}
 article.review > div.review-content > ul > li > div > ul > li > h5 {font-size: 19pt; line-height: 21px; color:#564782; font-weight: 800; margin-bottom: 15px;}
 article.review > div.review-content > ul > li > div > ul > li > p {font-size: 10.67pt; line-height: 15pt; color:#615190;}
-article.review > div.review-content > h5 {margin: 75px 0 0 340px; display: inline-block;}
+article.review > div.review-content > h5 {width: 995px; display: inline-block; margin-top: 73px;}
 article.review > div.review-content > h5 > p {font-size:16pt; font-weight: 700; color: #1e195f; line-height: 30pt; text-align: center;}
 article.review > div.review-content > h5 > p > span {color:#5d56bd;}
 
@@ -199,12 +199,12 @@ footer > h6 > p:first-child {padding-right: 222px;}
       pointer-events:none;
 }
 #cursor-dot{z-index:600;width:4px;height:4px;border-radius:50%;background-color:rgb(162, 0, 255);}
-#cursor-bg{z-index:400;width:30px;height:30px;border:1px solid #fff;border-radius:50%;transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955),height 200ms cubic-bezier(0.455,0.030,0.515,0.955),background-color 200ms cubic-bezier(0.455,0.030,0.515,0.955),border-color 200ms cubic-bezier(0.455,0.030,0.515,0.955);}
-#progress{z-index:500;color:#fff;width:30px;height:30px;border-radius:50%;transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955);}
-#cursor-bg.active{width:50px;height:50px;background-color:#fff;border-color:#fff;mix-blend-mode:exclusion;}
+#cursor-bg{z-index:400;width:30px;height:30px;border:1px solid #fff;border-radius: 50%;transition:width 200ms cubic-bezier(0.5,0.03,0.5,0.9),height 200ms cubic-bezier(0.5,0.03,0.5,0.9),border-color 200ms cubic-bezier(0.5,0.03,0.5,0.9);}
+#progress{z-index:500;color:#fff;width:30px;height:30px;border-radius:50%;transition:width 200ms cubic-bezier(0.5,0.03,0.5,0.9);}
+#cursor-bg.active{width:50px;height:50px;background-color:#fff;border-color:#fff;mix-blend-mode: overlay;}
 #progress.active{width:50px;height:50px;}
 #progress span{display:block;position:absolute;top:50%;left:50%;text-align:center;transform:translateX(-50%) translateY(-50%);}
-#progress.active span::after{content:'click!';text-transform:uppercase;font-size:0.833rem;line-height:1.333rem;opacity:0;transition:opacity 200ms cubic-bezier(0.455,0.030,0.515,0.955);}
+#progress.active span::after{content:'click!';text-transform:uppercase;font-size:0.833rem;line-height:1.333rem;opacity:0;transition:opacity 200ms cubic-bezier(0.5,0.03,0.5,0.9);}
 #progress.active span::after{opacity:1.0;} 
 
 
@@ -219,7 +219,6 @@ footer > h6 > p:first-child {padding-right: 222px;}
       border-radius: 50%;
       position: absolute;
       animation: up 1.5s infinite;
-      -webkit-animation: up 1.5s infinite;
   }
   .scroll::before {
       content: '';
