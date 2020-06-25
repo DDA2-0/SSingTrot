@@ -22,7 +22,7 @@ header > nav > div.nav > ul > li > a.selected {opacity: 100%;}
 
 article.main-visual {
       height: 760px; padding:0 20%; text-align:justify; 
-      background-image: url("image/main-visual.jpg"); background-size: cover;
+      background-image: url("../image/main-visual.jpg"); background-size: cover;
       display: block;
 }
 article.main-visual > div.txt-btn {padding: 230px 0 0 0; position: relative;}
@@ -88,7 +88,7 @@ article.about > div.video > iframe {vertical-align: bottom; justify-content:cent
 
 article.service {
       height: 1110px; padding: 135px 0 0 20%;
-      background-image: url(./image/service-visual.jpg);
+      background-image: url("../image/service-visual.jpg");
       background-size: cover; background-position: center;
 }
 .menu-name2 { position: relative; font-size: 17pt; margin: 0 20% 0 110px; font-weight: 700;}
@@ -151,7 +151,7 @@ div.service-menu li a{border-radius: 45px; position:relative;display:block;width
 div.service-menu li a.selected{background-color:#a088d3;color:#fff;cursor:default;}
 div.service-menu + div.service-container{margin-top:20px;}
 
-article.service-tv {background-image: url(./image/tv-visual.jpg); background-size: cover; background-position: center; height: 995px; padding: 315px 0 0 20%;}
+article.service-tv {background-image: url("../image/tv-visual.jpg"); background-size: cover; background-position: center; height: 995px; padding: 315px 0 0 20%;}
 article.service-tv > div.tv-txt {position: absolute;}
 article.service-tv > div.tv-txt > ul {list-style-type: none;}
 article.service-tv > div.tv-txt > ul > li {width:450px;}
