@@ -1,3 +1,4 @@
+// cursor script
 var cursorDotEl = document.querySelector("#cursor-dot"),
       cursorBGEl = document.querySelector("#cursor-bg"),
       progressEl = document.querySelector("#progress"),
@@ -53,7 +54,7 @@ for(var i = 0; i < btnEl.length; i++){
 }
 
 
-
+// service content script
 var serviceMenuEl = document.querySelector('#service-menu'),
     btnServiceMenuEl = serviceMenuEl.querySelectorAll('a'),
     serviceContainerEl = document.querySelector('.service-container'),
